@@ -1,0 +1,72 @@
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:29:26.553937108Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:29:27.627726319Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:29:29.703206442Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:29:32.815618358Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:31:27.205652899Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:31:28.351373507Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:31:30.463878803Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:31:33.560377252Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:33:09.384057419Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:33:10.473026514Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:33:12.558891509Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:33:15.648373127Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:04.439239052Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:05.565899489Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:07.679069776Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:10.764356871Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:56.482690742Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:57.567883016Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:35:59.681461832Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:36:02.788333528Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:37:24.385053622Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:37:25.502554745Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:37:27.595257713Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:37:30.695024638Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:38:38.086384628Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:38:39.18147129Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:38:41.317595044Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:38:44.398399601Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:40:25.053676696Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:40:26.195250384Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:40:28.328294388Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:40:31.447247402Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:41:37.446020598Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:41:38.566378286Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:41:40.670844301Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"
+Deprecation warning: The standalone 'grafana-server' program is deprecated and will be removed in the future. Please update all uses of 'grafana-server' to 'grafana server'
+logger=settings t=2025-03-10T14:41:43.759528684Z level=error msg="failed to parse \"/etc/grafana/grafana.ini\": open /etc/grafana/grafana.ini: no such file or directory"

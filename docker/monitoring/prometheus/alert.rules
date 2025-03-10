@@ -1,0 +1,68 @@
+groups:
+- name: app_alerts
+  rules:
+  # Alertes de sécurité
+  - alert: HighErrorRate
+    expr: rate(http_requests_total{status=~"5.."}[5m]) > 1
+    for: 5m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Taux d'erreurs HTTP élevé"
+      description: "Le taux d'erreurs HTTP 5xx est supérieur à 1 req/s depuis 5 minutes"
+
+  - alert: HighRateLimitHits
+    expr: rate(nginx_http_limit_req_status{status="rejected"}[5m]) > 0.5
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Nombreuses requêtes bloquées par le rate limiting"
+      description: "Plus de 0.5 req/s sont bloquées par le rate limiting"
+
+  - alert: DatabaseConnections
+    expr: mysql_global_status_threads_connected > 80
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Nombre élevé de connexions à la base de données"
+      description: "Plus de 80 connexions simultanées à MariaDB"
+
+  # Alertes de performance
+  - alert: HighCPUUsage
+    expr: rate(process_cpu_seconds_total[5m]) * 100 > 80
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Utilisation CPU élevée"
+      description: "L'utilisation CPU est supérieure à 80% depuis 5 minutes"
+
+  - alert: HighMemoryUsage
+    expr: (process_resident_memory_bytes / container_memory_usage_bytes) * 100 > 80
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Utilisation mémoire élevée"
+      description: "L'utilisation de la mémoire est supérieure à 80% depuis 5 minutes"
+
+  # Alertes de disponibilité
+  - alert: ServiceDown
+    expr: up == 0
+    for: 1m
+    labels:
+      severity: critical
+    annotations:
+      summary: "Service arrêté"
+      description: "Le service {{ $labels.job }} est arrêté"
+
+  - alert: HighLatency
+    expr: http_request_duration_seconds{quantile="0.9"} > 1
+    for: 5m
+    labels:
+      severity: warning
+    annotations:
+      summary: "Latence élevée"
+      description: "90% des requêtes prennent plus d'une seconde"

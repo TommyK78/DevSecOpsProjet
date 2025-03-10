@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Application CRUD Sécurisée</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Gestionnaire d'Items</h1>
+        
+        <!-- Formulaire d'ajout -->
+        <div class="form-container">
+            <h2>Ajouter/Modifier un Item</h2>
+            <form id="itemForm">
+                <input type="hidden" id="itemId">
+                <div class="form-group">
+                    <label for="name">Nom:</label>
+                    <input type="text" id="name" required maxlength="100">
+                </div>
+                <div class="form-group">
+                    <label for="description">Description:</label>
+                    <textarea id="description" required maxlength="500"></textarea>
+                </div>
+                <button type="submit" id="submitBtn">Ajouter</button>
+                <button type="button" id="cancelBtn" style="display: none;">Annuler</button>
+            </form>
+        </div>
+
+        <!-- Liste des items -->
+        <div class="items-container">
+            <h2>Liste des Items</h2>
+            <div id="itemsList"></div>
+        </div>
+    </div>
+
+    <script src="js/app.js"></script>
+</body>
+</html>

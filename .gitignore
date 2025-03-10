@@ -1,0 +1,15 @@
+# Terraform
+*.tfvars
+.terraform/
+.env
+*.tfstate
+*.tfstate.*
+
+# Secrets
+secrets/
+*.pem
+*.key
+*.crt
+
+# Environment variables
+.env*

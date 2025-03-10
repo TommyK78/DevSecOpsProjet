@@ -1,0 +1,137 @@
+version: '3.8'
+
+services:
+  frontend:
+    build: 
+      context: .
+      dockerfile: docker/frontend/Dockerfile
+    container_name: devsecops-frontend
+    restart: unless-stopped
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./docker/frontend/certs:/etc/nginx/certs:ro
+      - ./docker/frontend/logs:/var/log/nginx:rw
+    networks:
+      - frontend-network
+    depends_on:
+      - app
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+  backend:
+    build:
+      context: .
+      dockerfile: docker/backend/Dockerfile
+    container_name: devsecops-backend
+    restart: unless-stopped
+    environment:
+      - MYSQL_ROOT_PASSWORD_FILE=/run/secrets/db_root_password
+      - MYSQL_DATABASE=devsecops
+      - MYSQL_USER=app_user
+      - MYSQL_PASSWORD_FILE=/run/secrets/db_password
+    volumes:
+      - mariadb_data:/var/lib/mysql
+      - ./docker/backend/certs:/etc/mysql/certs:ro
+      - ./docker/backend/logs:/var/log/mysql:rw
+    networks:
+      - backend-network
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    secrets:
+      - db_root_password
+      - db_password
+
+  app:
+    build: 
+      context: .
+      dockerfile: docker/app/Dockerfile
+    container_name: devsecops-app
+    restart: unless-stopped
+    environment:
+      - NODE_ENV=production
+      - DB_HOST=backend
+      - DB_USER=app_user
+      - DB_PASSWORD_FILE=/run/secrets/db_password
+      - DB_NAME=devsecops
+      - SESSION_SECRET_FILE=/run/secrets/session_secret
+    depends_on:
+      - backend
+    networks:
+      - frontend-network
+      - backend-network
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    secrets:
+      - db_password
+      - session_secret
+
+  monitoring:
+    build:
+      context: .
+      dockerfile: docker/monitoring/Dockerfile
+    container_name: devsecops-monitoring
+    restart: unless-stopped
+    ports:
+      - "3000:3000"  # Grafana
+      - "9090:9090"  # Prometheus
+    volumes:
+      - prometheus_data:/prometheus
+      - grafana_data:/var/lib/grafana
+      - ./docker/monitoring/certs:/etc/prometheus/certs:ro
+      - ./docker/monitoring/logs:/var/log/grafana:rw
+      - /var/run:/var/run:rw
+    networks:
+      - frontend-network
+      - monitoring-network
+    depends_on:
+      - app
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:3000"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+
+networks:
+  frontend-network:
+    driver: bridge
+  backend-network:
+    driver: bridge
+    internal: true
+  monitoring-network:
+    driver: bridge
+  app-network:
+    driver: bridge
+
+volumes:
+  mariadb_data:
+  grafana_data:
+  prometheus_data:
+  db_data:
+    driver: local
+
+secrets:
+  db_root_password:
+    file: ./secrets/db_root_password.txt
+  db_password:
+    file: ./secrets/db_password.txt
+  session_secret:
+    file: ./secrets/session_secret.txt
