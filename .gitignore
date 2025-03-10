@@ -1,9 +1,9 @@
 # Terraform
 *.tfvars
-.terraform/
-.env
 *.tfstate
 *.tfstate.*
+.terraform/
+.terraform.lock.hcl
 
 # Secrets
 secrets/

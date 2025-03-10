@@ -83,3 +83,6 @@ Version: '10.11.11-MariaDB-ubu2204-log'  socket: '/var/run/mysqld/mysqld.sock'  
 2025-03-10 15:04:34 36 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
 2025-03-10 15:05:04 37 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
 2025-03-10 15:05:34 38 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
+2025-03-10 15:06:04 39 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
+2025-03-10 15:06:34 40 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
+2025-03-10 15:07:04 41 [Warning] Access denied for user 'mysql'@'localhost' (using password: NO)
